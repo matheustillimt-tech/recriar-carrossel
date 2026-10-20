@@ -1,0 +1,6 @@
+.env
+**/.env
+perfil/
+**/perfil/
+__pycache__/
+.DS_Store
