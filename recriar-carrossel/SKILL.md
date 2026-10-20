@@ -327,7 +327,7 @@ Texto de 130px+ dentro do artboard com padding quebra sozinho ("modelos de / IA"
 
 Corrija **pontualmente** — não recomece o slide.
 
-**Export** (requer Paper Pro):
+**Export:**
 - `export` com `{nodeId, format:"png", scale:"1x"}` → PNG 1080×1350 (padrão Instagram). `2x` → 2160×2700 se quiser mais nitidez. Sai pra `~/Downloads` com o nome do artboard.
 - **Mova** (não copie) cada PNG de `~/Downloads` pra `slides/{slug}-NN.png` da pasta do carrossel (ver "Onde salvar"). Não deixe export solto no Downloads.
 - `export_combined_pdf` → todos os slides num PDF só, na ordem dos artboards.

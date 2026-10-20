@@ -15,12 +15,15 @@ As duas usam a mesma pasta de configuração, então dá pra instalar e usar as 
 
 Precisa do [Claude Code](https://claude.com/claude-code) instalado.
 
+**Jeito mais fácil:** abre o Claude Code e cola: `Instala as skills do repositório https://github.com/matheustillimt-tech/recriar-carrossel na minha pasta de skills (~/.claude/skills)`. Ele faz o resto.
+
+Prefere fazer na mão?
+
 **Mac ou Linux**, no Terminal:
 
 ```bash
-git clone https://github.com/matheustillimt-tech/recriar-carrossel /tmp/recriar-carrossel
-mkdir -p ~/.claude/skills
-cp -R /tmp/recriar-carrossel/recriar-carrossel /tmp/recriar-carrossel/recriar-carrossel-image-gen ~/.claude/skills/
+D=$(mktemp -d) && git clone -q https://github.com/matheustillimt-tech/recriar-carrossel "$D"
+mkdir -p ~/.claude/skills && cp -R "$D"/recriar-carrossel "$D"/recriar-carrossel-image-gen ~/.claude/skills/
 pip3 install httpx python-dotenv pillow
 ```
 
